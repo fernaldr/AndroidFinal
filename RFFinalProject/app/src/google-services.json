@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573770285936",
+    "project_id": "rf-final-project",
+    "storage_bucket": "rf-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573770285936:android:6318e53bbb6c1d917b05b5",
+        "android_client_info": {
+          "package_name": "com.example.rffinalproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr90q8WsCU2xOGRHcYqxnC_eA995w_aUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Button to analyze sample receipt -->
+    <Button
+        android:id="@+id/btnFromSample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:layout_marginBottom="16dp"
+        android:onClick="onSampleButtonClick"/>
+
+    <!-- Button to take a picture and analyze -->
+    <Button
+        android:id="@+id/btnFromCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:layout_below="@id/btnFromSample"
+        android:layout_marginTop="16dp"
+        android:onClick="onCameraButtonClick"/>
+
+    <!-- EditText for entering receipt name -->
+    <EditText
+        android:id="@+id/etReceiptName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFromCamera"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Receipt Name"/>
+
+    <!-- TextView to display the recognition result -->
+    <TextView
+        android:id="@+id/tvRecognitionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recognition Result"
+        android:layout_below="@id/etReceiptName"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Button to save recognized items -->
+    <Button
+        android:id="@+id/btnSaveItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Items"
+        android:layout_below="@id/tvRecognitionResult"
+        android:layout_marginTop="16dp"
+        android:onClick="onSaveButtonClick"/>
+</RelativeLayout>
